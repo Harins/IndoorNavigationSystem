@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Alarm_Information_Details>
+<MobileTagID id="">
+<Name/>
+<PhotoID/>
+<Home/>
+<Note/>
+</MobileTagID>
+
+<MobileTagID id="">
+<Name/>
+<PhotoID/>
+<Home/>
+<Note/>
+</MobileTagID>
+<MobileTagID id="">
+<Name/>
+<PhotoID/>
+<Home/>
+<Note/>
+</MobileTagID>
+
+<MobileTagID id="-47">
+<Name>Hari</Name>
+<PhotoID>123</PhotoID>
+<Home>A25</Home>
+<Note>Nothing</Note>
+</MobileTagID>
+<MobileTagID id="-48">
+<Name>Uma</Name>
+<PhotoID>124</PhotoID>
+<Home>A25</Home>
+<Note>Nothing</Note>
+</MobileTagID>
+</Alarm_Information_Details>

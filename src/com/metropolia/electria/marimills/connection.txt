@@ -1,0 +1,46 @@
+Client (requires JSONObject from org.json):
+
+public void updateJSON(int mid, int bid, int alarm) {
+        try {
+            
+            JSONObject foo = new JSONObject();
+            foo.put("mid", mid);
+            foo.put("bid", bid);
+            foo.put("alarm", alarm);
+            
+            String request = URLEncoder.encode("json", "UTF-8") + "=" + foo.toString();
+            URL url = new URL("http://localhost:9000/foo");
+            URLConnection connection = url.openConnection();
+            connection.setDoOutput(true);
+            
+            try (OutputStreamWriter osw = new OutputStreamWriter(connection.getOutputStream())) {
+                osw.write(request);
+                osw.flush();
+            }
+            
+            StringBuilder response = new StringBuilder();
+            try (BufferedReader br = new BufferedReader(new InputStreamReader(connection.getInputStream()))) {
+                String line;
+                while ((line = br.readLine()) != null) {
+                    response.append(line);
+                }
+            }
+            System.out.println(response);
+            
+        } catch (JSONException | IOException e) {
+            e.printStackTrace();
+        }
+}
+
+Server:
+
+public static void foo(String json) {
+        try {
+            JSONObject obj = new JSONObject(json);
+            System.out.println("mid: "+obj.getInt("mid")+" bid: "+obj.getInt("bid")+" alarm: "+obj.getInt("alarm"));
+        } catch (JSONException e) {
+            renderJSON(false);
+        }
+
+        renderJSON(json);
+    }

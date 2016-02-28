@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><Beacon_Details>
+
+<BeaconName id="Corridor3_ID"> 
+<BeaconID>14</BeaconID>
+</BeaconName> 
+
+<BeaconName id="Corridor4_ID"> 
+<BeaconID>04</BeaconID>
+</BeaconName> 
+
+<BeaconName id="Corridor5_ID"> 
+<BeaconID>07</BeaconID>
+</BeaconName> 
+
+<BeaconName id="Corridor6_ID"> 
+<BeaconID>09</BeaconID>
+</BeaconName> 
+
+<BeaconName id="Corridor7_ID"> 
+<BeaconID>19</BeaconID>
+</BeaconName> 
+
+<BeaconName id="Corridor8_ID"> 
+<BeaconID>17</BeaconID>
+</BeaconName> 
+
+</Beacon_Details>
