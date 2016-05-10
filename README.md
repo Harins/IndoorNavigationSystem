@@ -1,4 +1,4 @@
- # IndoorNavigationSystem
+IndoorNavigationSystem
 
 Created: 28.12.2012
 
