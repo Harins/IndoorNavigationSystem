@@ -1,6 +1,4 @@
 IndoorNavigationSystem
-
-
 Created: 28.12.2012
 
 Bachelor Internship project work: Java desktop application for Indoor Navigation System. Input data are collected and read from receiver using serial communication and transmit the signal by using Transmitter.
